@@ -5,14 +5,14 @@ from PIL import Image
 import io
 from pynput.mouse import Button, Controller
 
-ESP32_IP = "192.168.1.112" ## Change your Esp32 IP Adress
+ESP32_IP = "192.168.1.112" # Change your Esp32 IP Adress
 ESP32_PORT = 81
 MONITOR_NUMBER = 2
 
 TARGET_FPS = 12
 JPEG_QUALITY = 35
 CHUNK_SIZE = 4096*2
-RESIZE_METHOD = Image.Resampling.BILINEAR
+RESIZE_METHOD = Image.Resampling.BILINEAR # You can select BILINEAR/NEAREST
 
 mouse = Controller()
 
