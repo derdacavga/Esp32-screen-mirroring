@@ -131,7 +131,8 @@ void setup() {
   tft.fillScreen(TFT_BLACK);
 
   perform_calibration();
-
+  //  tft.setTouch(300, 3000, 350, 3500, 6);
+  
   tft.fillScreen(TFT_BLACK);
   
   TJpgDec.setJpgScale(1);
