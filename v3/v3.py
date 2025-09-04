@@ -34,7 +34,7 @@ async def handle_touch(websocket):
                 except Exception:
                     pass
             elif message == "FRAME_DONE":
-                print("ESP32 processed frame")
+                pass
     except websockets.exceptions.ConnectionClosed:
         pass
 
