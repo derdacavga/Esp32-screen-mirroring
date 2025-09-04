@@ -30,6 +30,7 @@ async def handle_touch(websocket):
                     target_x = (x_touch / 320) * pc_screen_width
                     target_y = (y_touch / 240) * pc_screen_height
                     mouse.position = (int(target_x), int(target_y))
+                    # mouse.click(Button.left, 1) # If you want touch touch = click enable this line
                 except Exception:
                     pass
             elif message == "FRAME_DONE":
