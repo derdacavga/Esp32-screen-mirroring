@@ -130,11 +130,11 @@ void setup() {
   tft.setRotation(1);
   tft.fillScreen(TFT_BLACK);
 
-  perform_calibration();
-  //  tft.setTouch(300, 3000, 350, 3500, 6);
+  perform_calibration();                                  // If you use setTouch Comment this line
+  //uint16_t calData[5] = { 508, 3290, 400, 3027, 7 };    // If you use setTouch .uncomment this line
+  //tft.setTouch(calData); 
   
   tft.fillScreen(TFT_BLACK);
-  
   TJpgDec.setJpgScale(1);
   TJpgDec.setSwapBytes(true);
   TJpgDec.setCallback(tft_output);
